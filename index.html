@@ -3,231 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simran's professional portfolio - Copywriting & UX/UI Design">
-    <title>Simran | Copywriter & UX/UI Designer</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;700&display=swap" rel="stylesheet">
-
+    <title>Simran's Creative Corner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Global Styles */
-        * {
+        body {
+            font-family: 'Montserrat Alternates', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Montserrat Alternates', sans-serif;
+            color: #333;
+            animation: backgroundAnimation 10s infinite alternate;
         }
 
-        body {
-            background-color: #1d2d24;
-            color: #f0f4f1;
-            font-size: 16px;
-            line-height: 1.6;
+        @keyframes backgroundAnimation {
+            0% { background-color: #ffcccc; }
+            50% { background-color: #ccffcc; }
+            100% { background-color: #ccccff; }
         }
 
-        /* Container */
         .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Header */
-        .header {
-            text-align: center;
-            padding: 70px 0;
-            background-color: #346751;
-            color: #f0f4f1;
-            border-bottom-left-radius: 30px;
-            border-bottom-right-radius: 30px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .header h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
-        .header p {
-            font-size: 1.3rem;
-            margin-top: 10px;
-        }
-
-        /* Main Info Section */
-        .info-section {
-            background-color: #2a4033;
-            padding: 40px;
-            margin-top: -30px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            border-radius: 15px;
-        }
-
-        .info-section h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #82c596;
-            font-weight: bold;
-        }
-
-        .info-section p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        /* Info Item Boxes */
-        .info-item {
-            margin-bottom: 35px;
-            background-color: #3b523d;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .info-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .info-item h3 {
-            color: #a8e6a2;
-            margin-bottom: 10px;
-        }
-
-        .info-item p {
-            font-size: 1rem;
-        }
-
-        /* Contact Section */
-        .contact-section {
-            background-color: #346751;
-            color: #f0f4f1;
-            padding: 40px;
-            border-radius: 15px;
-            margin-top: 50px;
-        }
-
-        .contact-section h3 {
-            text-align: center;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
-
-        .contact-section form {
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-
-        .contact-section input, .contact-section textarea {
-            width: 80%;
-            padding: 15px;
-            margin-bottom: 20px;
-            border: none;
-            border-radius: 10px;
-            font-size: 1rem;
-            background-color: #f0f4f1;
-            color: #1d2d24;
-        }
-
-        .contact-section input[type="submit"] {
-            background-color: #82c596;
-            color: white;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact-section input[type="submit"]:hover {
-            background-color: #6aa87b;
-        }
-
-        /* Footer */
-        .footer {
+            justify-content: center;
+            min-height: 100vh;
             text-align: center;
-            padding: 20px 0;
-            background-color: #2a4033;
-            color: white;
-            margin-top: 50px;
+            padding: 20px;
+            transition: transform 0.5s;
         }
 
-        .footer a {
-            color: white;
-            margin: 0 15px;
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            transition: transform 0.5s;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.5s;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+            line-height: 1.5;
+            max-width: 600px;
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        a {
+            color: #007BFF;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-weight: bold;
         }
 
-        .footer a:hover {
+        a:hover {
             text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body>
-
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <h1>Simran</h1>
-            <p>Creative Copywriter & UX/UI Designer</p>
+    <div class="container">
+        <h1>Welcome to Simran's Creative Corner!</h1>
+        <h2>Aspiring Copywriter & UX/UI Enthusiast</h2>
+        <p>Hi there! I’m Simran, and I’m on a journey to blend creativity with technology. Whether it's crafting captivating copy or designing user-friendly interfaces, I strive to sprinkle a bit of magic into everything I do. Think of me as a wizard with words and pixels!</p>
+        <p>Feel free to reach out if you want to chat, collaborate, or simply share a meme. I'm all ears!</p>
+        <div class="contact">
+            <p>Contact me at: <a href="mailto:simran@example.com">simran@example.com</a></p>
         </div>
-    </header>
-
-    <!-- Info Section -->
-    <section class="info-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! I'm Simran, a passionate creative copywriter and UX/UI design student. With a focus on clarity and user-friendly experiences, I aim to craft persuasive and visually appealing content.</p>
-
-            <div class="info-item">
-                <h3>Skills</h3>
-                <p>• Copywriting: Crafting engaging, persuasive copy for various audiences.<br>
-                   • UX/UI Design: Designing intuitive and visually appealing user interfaces.<br>
-                   • Creative Writing: Bringing imagination to life through storytelling and innovation.</p>
-            </div>
-
-            <div class="info-item">
-                <h3>Education</h3>
-                <p>Currently enrolled in a comprehensive UX/UI Design course, refining skills in designing user-centric experiences while applying creative writing techniques.</p>
-            </div>
-
-            <div class="info-item">
-                <h3>Projects</h3>
-                <p>• UX/UI Personal Website: Developed a user-focused website to showcase design skills.<br>
-                   • Creative Copywriting Samples: Produced high-quality copy for mock campaigns and projects.</p>
-            </div>
-
-            <div class="info-item">
-                <h3>Interests</h3>
-                <p>• Creative Writing<br>• UX/UI Design<br>• Copywriting</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="container">
-            <h3>Contact Me</h3>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send Message">
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2024 Simran. All Rights Reserved.</p>
-            <div>
-                <a href="#">LinkedIn</a>
-                <a href="#">Twitter</a>
-            </div>
-        </div>
-    </footer>
-
+    </div>
 </body>
 </html>
