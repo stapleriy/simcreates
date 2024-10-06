@@ -12,6 +12,10 @@
             padding: 0;
             color: #333;
             animation: backgroundAnimation 10s infinite alternate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
         @keyframes backgroundAnimation {
@@ -25,43 +29,63 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
             text-align: center;
             padding: 20px;
-            transition: transform 0.5s;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .box {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
         }
 
         h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
-            transition: transform 0.5s;
         }
 
         h2 {
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
-            transition: transform 0.5s;
         }
 
         p {
             font-size: 1rem;
             margin: 0.5rem 0;
             line-height: 1.5;
-            max-width: 600px;
         }
 
         .contact {
             margin-top: 20px;
         }
 
-        a {
-            color: #007BFF;
-            text-decoration: none;
-            font-weight: bold;
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
         }
 
-        a:hover {
-            text-decoration: underline;
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
         }
 
         @media (max-width: 600px) {
@@ -81,10 +105,20 @@
     <div class="container">
         <h1>Welcome to Simran's Creative Corner!</h1>
         <h2>Aspiring Copywriter & UX/UI Enthusiast</h2>
-        <p>Hi there! I’m Simran, and I’m on a journey to blend creativity with technology. Whether it's crafting captivating copy or designing user-friendly interfaces, I strive to sprinkle a bit of magic into everything I do. Think of me as a wizard with words and pixels!</p>
-        <p>Feel free to reach out if you want to chat, collaborate, or simply share a meme. I'm all ears!</p>
-        <div class="contact">
-            <p>Contact me at: <a href="mailto:simran@example.com">simran@example.com</a></p>
+        <div class="box">
+            <p>Hi there! I’m Simran, and I’m on a journey to blend creativity with technology. Whether it's crafting captivating copy or designing user-friendly interfaces, I strive to sprinkle a bit of magic into everything I do. Think of me as a wizard with words and pixels!</p>
+            <p>Feel free to reach out if you want to chat, collaborate, or simply share a meme. I'm all ears!</p>
+            <p>Additionally, if you have tips or resources to help me on my self-learning journey, I would love to hear from you!</p>
+        </div>
+        <div class="contact box">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p>Feel free to share tips or resources on your self-learning journey!</p>
         </div>
     </div>
 </body>
