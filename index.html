@@ -19,8 +19,8 @@
         }
 
         body {
-            background-color: #1d202f; /* Deep blue-gray background */
-            color: #e3e4f1; /* Light lavender for text */
+            background-color: #1d2d24;
+            color: #f0f4f1;
             font-size: 16px;
             line-height: 1.6;
         }
@@ -35,108 +35,199 @@
         /* Header */
         .header {
             text-align: center;
-            padding: 50px 0;
-            background-color: #3c3b53; /* Slate purple for the header */
+            padding: 70px 0;
+            background-color: #346751;
             color: #f0f4f1;
-            border-radius: 15px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
         }
 
         .header h1 {
             font-size: 3rem;
             font-weight: 700;
-            color: #f6a5e1; /* Soft rose pink */
+            letter-spacing: 2px;
         }
 
-        .header h2 {
-            font-size: 1.8rem;
-            font-weight: 300;
+        .header p {
+            font-size: 1.3rem;
             margin-top: 10px;
-            color: #b9e0d9; /* Muted aqua */
         }
 
-        /* Sections */
-        .section {
-            background-color: #204d44; /* Rich teal for section background */
+        /* Main Info Section */
+        .info-section {
+            background-color: #2a4033;
+            padding: 40px;
+            margin-top: -30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+        }
+
+        .info-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #82c596;
+            font-weight: bold;
+        }
+
+        .info-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Info Item Boxes */
+        .info-item {
+            margin-bottom: 35px;
+            background-color: #3b523d;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .info-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .info-item h3 {
+            color: #a8e6a2;
+            margin-bottom: 10px;
+        }
+
+        .info-item p {
+            font-size: 1rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: #346751;
+            color: #f0f4f1;
             padding: 40px;
             border-radius: 15px;
-            margin-bottom: 30px;
+            margin-top: 50px;
         }
 
-        .section h3 {
-            font-size: 2rem;
-            color: #f6a5e1; /* Soft rose pink */
-            margin-bottom: 15px;
+        .contact-section h3 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
         }
 
-        .section p {
-            font-size: 1.2rem;
-            color: #e3e4f1; /* Light lavender text */
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        /* Rounded Box Styles */
-        .rounded-box {
-            background-color: #523653; /* Muted plum for the box */
-            padding: 20px;
+        .contact-section input, .contact-section textarea {
+            width: 80%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
+            font-size: 1rem;
+            background-color: #f0f4f1;
+            color: #1d2d24;
         }
 
-        .rounded-box:hover {
-            transform: scale(1.05); /* Hover effect */
+        .contact-section input[type="submit"] {
+            background-color: #82c596;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-section input[type="submit"]:hover {
+            background-color: #6aa87b;
         }
 
         /* Footer */
         .footer {
-            background-color: #3c3b53;
-            padding: 30px;
             text-align: center;
-            color: #e3e4f1;
-            border-radius: 15px;
+            padding: 20px 0;
+            background-color: #2a4033;
+            color: white;
+            margin-top: 50px;
         }
 
         .footer a {
-            color: #f6a5e1; /* Soft rose pink for links */
+            color: white;
+            margin: 0 15px;
             text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
+            font-size: 1.2rem;
         }
 
         .footer a:hover {
-            color: #b9e0d9; /* Muted aqua on hover */
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
             <h1>Simran</h1>
-            <h2>Copywriter & UX/UI Designer</h2>
+            <p>Creative Copywriter & UX/UI Designer</p>
         </div>
+    </header>
 
-        <!-- About Me Section -->
-        <div class="section">
-            <h3>About Me</h3>
-            <div class="rounded-box">
-                <p>Passionate about crafting compelling narratives and creating intuitive digital experiences. I specialize in UX/UI design and copywriting, blending creativity with technical expertise to deliver impactful content and user-centered designs.</p>
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I'm Simran, a passionate creative copywriter and UX/UI design student. With a focus on clarity and user-friendly experiences, I aim to craft persuasive and visually appealing content.</p>
+
+            <div class="info-item">
+                <h3>Skills</h3>
+                <p>• Copywriting: Crafting engaging, persuasive copy for various audiences.<br>
+                   • UX/UI Design: Designing intuitive and visually appealing user interfaces.<br>
+                   • Creative Writing: Bringing imagination to life through storytelling and innovation.</p>
+            </div>
+
+            <div class="info-item">
+                <h3>Education</h3>
+                <p>Currently enrolled in a comprehensive UX/UI Design course, refining skills in designing user-centric experiences while applying creative writing techniques.</p>
+            </div>
+
+            <div class="info-item">
+                <h3>Projects</h3>
+                <p>• UX/UI Personal Website: Developed a user-focused website to showcase design skills.<br>
+                   • Creative Copywriting Samples: Produced high-quality copy for mock campaigns and projects.</p>
+            </div>
+
+            <div class="info-item">
+                <h3>Interests</h3>
+                <p>• Creative Writing<br>• UX/UI Design<br>• Copywriting</p>
             </div>
         </div>
+    </section>
 
-        <!-- Skills Section -->
-        <div class="section">
-            <h3>Skills</h3>
-            <div class="rounded-box">
-                <p><strong>Copywriting:</strong> Engaging, persuasive, and creative content across various formats.</p>
-                <p><strong>UX/UI Design:</strong> User-centered design with a focus on functionality and aesthetics.</p>
-                <p><strong>Creative Writing:</strong> Storytelling and imaginative content creation.</p>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Simran. All Rights Reserved.</p>
+            <div>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
             </div>
         </div>
+    </footer>
 
-        <!-- Contact Section -->
-        <div class="footer">
-            <p>Interested in working together? Reach out at <a href="mailto:simran@example.com">simran@example.com</a></p>
-        </div>
-    </div>
 </body>
 </html>
