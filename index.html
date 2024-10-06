@@ -12,12 +12,12 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
-            background-color: #f0f0f5;
-            color: #333;
+            background-color: #1e1e2f;
+            color: #e8e8f0;
             font-size: 16px;
             line-height: 1.6;
         }
@@ -32,34 +32,38 @@
         /* Header */
         .header {
             text-align: center;
-            padding: 50px 0;
-            background-color: #4b6584;
-            color: white;
+            padding: 70px 0;
+            background-color: #4b4a7d;
+            color: #e0e0eb;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
         }
 
         .header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 2px;
         }
 
         .header p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-top: 10px;
         }
 
         /* Main Info Section */
         .info-section {
-            background-color: #fff;
+            background-color: #292841;
             padding: 40px;
             margin-top: -30px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
         }
 
         .info-section h2 {
             text-align: center;
             margin-bottom: 20px;
-            color: #4b6584;
+            color: #c8a2c8;
             font-weight: bold;
         }
 
@@ -70,12 +74,22 @@
             margin-bottom: 40px;
         }
 
+        /* Info Item Boxes */
         .info-item {
-            margin-bottom: 25px;
+            margin-bottom: 35px;
+            background-color: #3d3c58;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .info-item:hover {
+            transform: translateY(-10px);
         }
 
         .info-item h3 {
-            color: #2d98da;
+            color: #ffd1dc;
             margin-bottom: 10px;
         }
 
@@ -83,11 +97,54 @@
             font-size: 1rem;
         }
 
+        /* Contact Section */
+        .contact-section {
+            background-color: #534b78;
+            color: #eaeaff;
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 50px;
+        }
+
+        .contact-section h3 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-section input, .contact-section textarea {
+            width: 80%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            background-color: #eaeaff;
+            color: #1e1e2f;
+        }
+
+        .contact-section input[type="submit"] {
+            background-color: #bc79c5;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-section input[type="submit"]:hover {
+            background-color: #a469ac;
+        }
+
         /* Footer */
         .footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #2d98da;
+            background-color: #3d3c58;
             color: white;
             margin-top: 50px;
         }
@@ -105,6 +162,7 @@
     </style>
 </head>
 <body>
+
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -144,6 +202,19 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -154,5 +225,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
+
