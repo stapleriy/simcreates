@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sim's professional portfolio showcasing creative copywriting and UX/UI design">
+    <title>Sim | Creative Copywriting & UX/UI Design</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        .header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav a {
+            color: white;
+            margin-left: 1rem;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-btn {
+            padding: 1rem 2rem;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .cta-btn:hover {
+            background-color: #ff3b3b;
+        }
+
+        /* About Section */
+        .about, .portfolio, .contact {
+            padding: 4rem 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .about h2, .portfolio h2, .contact h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        /* Portfolio Section */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .contact input, .contact textarea {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+        }
+
+        .contact button {
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .footer .socials a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        .footer .socials a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">Sim</div>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Creative Copywriting & UX/UI Design</h1>
+            <p>Innovative solutions to transform ideas into reality</p>
+            <a href="#portfolio" class="cta-btn">Explore My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I’m Sim. I'm passionate about creative problem-solving, copywriting, and UX/UI design. Currently, I’m enrolled in a UX/UI course, constantly learning how to design intuitive user experiences while also refining my writing skills.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                    <h3>UX/UI Design Project</h3>
+                    <p>Case study of a user-centered design solution.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                    <h3>Copywriting Sample</h3>
+                    <p>Creative and persuasive copywriting for a brand.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                    <h3>Personal Website</h3>
+                    <p>Ongoing project to build my portfolio website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Let’s work together! Feel free to reach out.</p>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Sim. All Rights Reserved.</p>
+            <div class="socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Contact Form -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for reaching out! Your message has been sent.');
+        });
+    </script>
+</body>
+</html>
